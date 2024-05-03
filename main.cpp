@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <string>
 #include <vector>
+#include <yaml-cpp/yaml.h>
 namespace fs = std::filesystem;
 
 std::vector<std::string> get_obs_vec(const std::string &path) {
@@ -32,6 +33,11 @@ std::vector<std::string> get_obs_vec(const std::string &path) {
   return obsids;
 }
 
+std::vector<std::array<int, 3>> get_source_list(const std::string &filename) {
+  std::vector<std::array<int, 3>> source_list;
+
+  return source_list;
+}
 std::vector<std::array<int, 3>> get_source_list() {
   std::vector<std::array<int, 3>> source_list;
 
